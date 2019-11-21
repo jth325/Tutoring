@@ -8,10 +8,9 @@ int main(void)
   printf("char 1 ? ");
   scanf("%s", s);
   printf("char 2 ? ");
-  scanf("%s", s);
+  scanf("%s", t);
 
   if (strcmp(s, t) < 0) strcpy(min, s);
   else strcpy(min, t);
-
   printf("%s\n", min);
 }

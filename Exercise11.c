@@ -5,13 +5,13 @@
 
 int compare(const void* ap, const void* bp)
 {
-  return (*(int*)ap) == (*(int*)bp);
+	return (*(int*)ap - *(int*)bp);
 }
 
 int main()
 {
-  unsigned int n = TALBLESIZE;
-  int table[TALBESIZE] = {1, 2, 3, 4, 5};
+  size_t n = TABLESIZE;
+  int table[TABLESIZE] = {1, 2, 3, 4, 5};
   int item, *ptr;
 
   item = 6;
