@@ -27,5 +27,4 @@ int main() {
   cticks = tmend.tms_utime + tmend.tms_stime - tmstart.tms_utime - tmstart.tms_stime;
   printf("Total CPU time is %f seconds \n", cticks / 100.f);
   printf("Fraction of CPU time used is %f\n", cticks / (tcend - tcstart));
-
 }

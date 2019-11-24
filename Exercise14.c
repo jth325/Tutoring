@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <search.h>
 #include <string.h>
-#define TABLESIZE 50
+#define TABLESIZE 4
 struct info {
   int id, age;
 };
@@ -13,7 +13,7 @@ int main() {
   // 인자로 받은 정수만큼 해쉬테이블 요소 생성
   hcreate(TABLESIZE);
   // 해쉬테이블에 들어갈 키 및 두개의 값을 입력받는다. 입력이 끝날때까지 또는 테이블의 크기만큼 입력받을때까지 반복한다
-  while (scanf("%d%d%d", nameptr, &infoptr->id, &infoptr->age) != EOF && i++ < TABLESIZE) {
+  while (scanf("%s %d %d", nameptr, &infoptr->id, &infoptr->age) != EOF && i++ < TABLESIZE - 1) {
     // 해쉬테이블에 데이터를 넣기위해 ENTRY 구조체에 입력받은 키, 값을 삽입한다
     item.key = nameptr; item.data = (char*)infoptr;
     // item 의 key 와 같은 데이터를 해쉬테이블에서 찾고 그 포인터를 반환한다, 찾으려는 key 가 없을경우 새로 데이터를 추가한다
