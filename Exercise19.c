@@ -8,7 +8,7 @@ int main()
   int ret;
 
   memcpy(dststr, srcstr, strlen(srcstr) + 1);
-  printf("dststr is \"%s\"\n" dststr);
+  printf("dststr is \"%s\"\n", dststr);
 
   memset(srcstr + 5, 'a', 5);
 

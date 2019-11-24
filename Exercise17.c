@@ -6,7 +6,7 @@ struct student {
   int mid, final;
 };
 
-main()
+int main()
 {
   int stu_num, i, sum;
   float avg;
@@ -20,7 +20,7 @@ main()
   if (stu_ptr == NULL) exit(-1);
 
   fflush(stdin);
-  for (i = 0; i < stu_num, ++i)
+  for (i = 0; i < stu_num; ++i)
   {
     printf("%d번째 학생의 이름 : ", i + 1);
     scanf("%s", stu_ptr[i].name);
@@ -33,7 +33,7 @@ main()
   printf("이름\t중간\t기말\t총점\t평균\n");
   for (i = 0; i < stu_num; i++)
   {
-    sum = stu_ptr[i].mid + stu_ptr[i].final);
+    sum = stu_ptr[i].mid + stu_ptr[i].final;
     avg = sum / 2;
     printf("%s\t%d\t%d\t%d\t%4.2f\n", stu_ptr[i].name, stu_ptr[i].mid, stu_ptr[i].mid, stu_ptr[i].final, sum, avg);
   }

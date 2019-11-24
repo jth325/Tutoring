@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <search.h>
+#include <stdlib.h>
 
 #define TABLESIZE 5
 
@@ -15,6 +16,6 @@ int main()
 
   // 퀵정렬(quick sort) 를 수행하는 함수이다
   qsort(table, TABLESIZE, sizeof(int), compare);
-  for (i = 0; i < TABLESIZE; ++i) printf("%d", table(i));
+  for (i = 0; i < TABLESIZE; ++i) printf("%d ", table[i]);
   printf("\n");
 }

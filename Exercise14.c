@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <search.h>
+#include <string.h>
 
 #define TABLESIZE 50
 
 struct info {
   int id, age;
-}
+};
 
 int main()
 {
-  char nametable[TABLESIZE * 20]
+  char nametable[TABLESIZE * 20];
   char *nameptr = nametable;
   struct info infotable[TABLESIZE];
   struct info* infoptr = infotable;

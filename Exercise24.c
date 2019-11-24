@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <time.h>
+#include <unistd.h>
 
-main()
+int main()
 {
   time_t tstart, tend;
   double diff;
 
-  time(&tsrart);
+  time(&tstart);
   sleep(3);
   time(&tend);
 

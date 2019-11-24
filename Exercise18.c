@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-main()
+int main()
 {
   char c, *ptr;
   int count;

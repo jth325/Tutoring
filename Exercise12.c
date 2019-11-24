@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <search.h>
+#include <stdlib.h>
 
 #define TABLESIZE 5
 
@@ -11,7 +12,7 @@ int compare(const void* ap, const void* bp)
 int main()
 {
   size_t n = TABLESIZE;
-  int table[SIZE] = {1, 2, 3, 4, 5};
+  int table[TABLESIZE] = {1, 2, 3, 4, 5};
   int item = 6, *ptr;
 
   // 정렬되있는 배열을 대상으로 이진탐색(bineary search)를 수행하는 함수이다
